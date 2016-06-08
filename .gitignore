@@ -1,0 +1,11 @@
+src/config/__history
+src/ide/__history
+src/__history
+*.~*
+*.dcu
+*.exe
+*.bak
+*.bkp
+*.vlb
+*.dproj.local
+*.stat
