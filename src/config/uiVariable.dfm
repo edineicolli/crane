@@ -1,0 +1,76 @@
+object FrmVariable: TFrmVariable
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'Variable'
+  ClientHeight = 94
+  ClientWidth = 291
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object leVariable: TLabeledEdit
+    Left = 56
+    Top = 8
+    Width = 229
+    Height = 21
+    EditLabel.Width = 42
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Variable:'
+    LabelPosition = lpLeft
+    TabOrder = 0
+  end
+  object leValue: TLabeledEdit
+    Left = 56
+    Top = 35
+    Width = 229
+    Height = 21
+    EditLabel.Width = 30
+    EditLabel.Height = 13
+    EditLabel.BiDiMode = bdLeftToRight
+    EditLabel.Caption = 'Value:'
+    EditLabel.ParentBiDiMode = False
+    LabelPosition = lpLeft
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 59
+    Width = 291
+    Height = 35
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 2
+    object bCancel: TButton
+      AlignWithMargins = True
+      Left = 213
+      Top = 3
+      Width = 75
+      Height = 29
+      Align = alRight
+      Caption = 'Cancel'
+      ModalResult = 2
+      TabOrder = 0
+      OnClick = bCancelClick
+    end
+    object bOK: TButton
+      AlignWithMargins = True
+      Left = 132
+      Top = 3
+      Width = 75
+      Height = 29
+      Align = alRight
+      Caption = 'OK'
+      ModalResult = 1
+      TabOrder = 1
+      OnClick = bOKClick
+    end
+  end
+end
